@@ -6,14 +6,16 @@
   <title>Umbral Login</title>
   <style>
     body {
-      background-color: #121212;
-      color: #e0e0e0;
+      background-color: var(--bg-color, #121212);
+      color: var(--text-color, #e0e0e0);
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      font-size: var(--font-size, 1rem);
+      transition: background 0.3s, color 0.3s, font-size 0.3s;
     }
     .login-box {
       background: #1e1e1e;
@@ -29,15 +31,22 @@
     }
     input {
       width: 100%;
-      padding: 0.7rem;
-      margin: 0.5rem 0;
-      border: none;
-      border-radius: 6px;
-      background: #2a2a2a;
+      padding: 0.85rem 1rem;
+      margin: 0.7rem 0;
+      border: 1.5px solid #333;
+      border-radius: 8px;
+      background: #23232b;
       color: #e0e0e0;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     input:focus {
-      outline: 2px solid #6200ea;
+      outline: none;
+      border-color: #6200ea;
+      box-shadow: 0 0 0 2px #6200ea44;
+      background: #26263a;
     }
     button {
       width: 100%;
@@ -95,6 +104,25 @@
         error.style.display = "block";
       }
     }
+
+    // Sitewide settings loader
+    function applySitewideSettings() {
+      const theme = localStorage.getItem('theme') || 'dark';
+      const fontSize = localStorage.getItem('fontSize') || 'normal';
+      if (theme === 'light') {
+        document.body.style.setProperty('--bg-color', '#f5f5fa');
+        document.body.style.setProperty('--text-color', '#22223a');
+      } else {
+        document.body.style.setProperty('--bg-color', '#121212');
+        document.body.style.setProperty('--text-color', '#e0e0e0');
+      }
+      if (fontSize === 'large') {
+        document.body.style.setProperty('--font-size', '1.25rem');
+      } else {
+        document.body.style.setProperty('--font-size', '1rem');
+      }
+    }
+    applySitewideSettings();
   </script>
 </body>
 </html>

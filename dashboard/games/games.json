@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Chess",
+    "location": "/games/chess/index.html",
+    "logo": "/games/chess/logo.png"
+  },
+  {
+    "name": "Sudoku",
+    "location": "/games/sudoku/index.html",
+    "logo": "/games/sudoku/logo.png"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "location": "/games/tictactoe/index.html",
+    "logo": "/games/tictactoe/logo.png"
+  }
+]

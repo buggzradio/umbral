@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - Umbral Dashboard</title>
+  <style>
+    body {
+      background-color: var(--bg-color, #181828);
+      color: var(--text-color, #e0e0e0);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      font-size: var(--font-size, 1rem);
+      transition: background 0.3s, color 0.3s, font-size 0.3s;
+    }
+    .settings-container {
+      max-width: 500px;
+      margin: 3rem auto;
+      background: #22223a;
+      border-radius: 16px;
+      box-shadow: 0 0 32px rgba(0,0,0,0.18);
+      padding: 2.5rem 2rem;
+    }
+    h2 {
+      color: #fff;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .setting-group {
+      margin-bottom: 2rem;
+    }
+    label {
+      font-size: 1rem;
+      color: #b39ddb;
+      margin-right: 1rem;
+    }
+    select, input[type="checkbox"] {
+      margin-right: 1rem;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #29294a;
+      color: #e0e0e0;
+    }
+    .save-btn {
+      display: block;
+      margin: 2rem auto 0 auto;
+      padding: 0.7rem 2rem;
+      background: #6200ea;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .save-btn:hover {
+      background: #3700b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-container">
+    <h2>Sitewide Settings</h2>
+    <form id="settingsForm">
+      <div class="setting-group">
+        <label for="theme">Theme:</label>
+        <select id="theme" name="theme">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+      <div class="setting-group">
+        <label for="fontSize">Font Size:</label>
+        <select id="fontSize" name="fontSize">
+          <option value="normal">Normal</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <div class="setting-group">
+        <label for="accentColor">Accent Color:</label>
+        <select id="accentColor" name="accentColor">
+          <option value="#6200ea">Purple</option>
+          <option value="#03dac6">Teal</option>
+          <option value="#ff5252">Red</option>
+          <option value="#ffd600">Yellow</option>
+        </select>
+      </div>
+      <div class="setting-group">
+        <label for="reducedMotion">Reduced Motion:</label>
+        <input type="checkbox" id="reducedMotion" name="reducedMotion">
+      </div>
+      <div class="setting-group">
+        <label for="notifications">Enable Notifications:</label>
+        <input type="checkbox" id="notifications" name="notifications">
+      </div>
+      <button type="button" class="save-btn" onclick="saveSettings()">Save Settings</button>
+      <button type="button" class="save-btn" style="background:#333;margin-top:1rem" onclick="window.location.href='/dashboard/index.html'">Back to Dashboard</button>
+    </form>
+  </div>
+  <script>
+    // Load settings from localStorage
+    function loadSettings() {
+      const theme = localStorage.getItem('theme') || 'dark';
+      const fontSize = localStorage.getItem('fontSize') || 'normal';
+      const accentColor = localStorage.getItem('accentColor') || '#6200ea';
+      const reducedMotion = localStorage.getItem('reducedMotion') === 'true';
+      const notifications = localStorage.getItem('notifications') === 'true';
+      document.getElementById('theme').value = theme;
+      document.getElementById('fontSize').value = fontSize;
+      document.getElementById('accentColor').value = accentColor;
+      document.getElementById('reducedMotion').checked = reducedMotion;
+      document.getElementById('notifications').checked = notifications;
+      applySettings(theme, fontSize, accentColor, reducedMotion);
+    }
+    // Save settings to localStorage
+    function saveSettings() {
+      const theme = document.getElementById('theme').value;
+      const fontSize = document.getElementById('fontSize').value;
+      const accentColor = document.getElementById('accentColor').value;
+      const reducedMotion = document.getElementById('reducedMotion').checked;
+      const notifications = document.getElementById('notifications').checked;
+      localStorage.setItem('theme', theme);
+      localStorage.setItem('fontSize', fontSize);
+      localStorage.setItem('accentColor', accentColor);
+      localStorage.setItem('reducedMotion', reducedMotion);
+      localStorage.setItem('notifications', notifications);
+      applySettings(theme, fontSize, accentColor, reducedMotion);
+      alert('Settings saved!');
+    }
+    // Apply settings to the page
+    function applySettings(theme, fontSize, accentColor, reducedMotion) {
+      if (theme === 'light') {
+        document.body.style.setProperty('--bg-color', '#f5f5fa');
+        document.body.style.setProperty('--text-color', '#22223a');
+      } else {
+        document.body.style.setProperty('--bg-color', '#181828');
+        document.body.style.setProperty('--text-color', '#e0e0e0');
+      }
+      document.body.style.setProperty('--accent-color', accentColor);
+      if (fontSize === 'large') {
+        document.body.style.setProperty('--font-size', '1.25rem');
+      } else {
+        document.body.style.setProperty('--font-size', '1rem');
+      }
+      if (reducedMotion) {
+        document.body.style.setProperty('transition', 'none');
+      } else {
+        document.body.style.setProperty('transition', 'background 0.3s, color 0.3s, font-size 0.3s');
+      }
+    }
+    // Sitewide settings loader for consistency
+    function applySitewideSettings() {
+      const theme = localStorage.getItem('theme') || 'dark';
+      const fontSize = localStorage.getItem('fontSize') || 'normal';
+      const accentColor = localStorage.getItem('accentColor') || '#6200ea';
+      const reducedMotion = localStorage.getItem('reducedMotion') === 'true';
+      applySettings(theme, fontSize, accentColor, reducedMotion);
+    }
+    // On page load
+    loadSettings();
+    applySitewideSettings();
+  </script>
+</body>
+</html>
