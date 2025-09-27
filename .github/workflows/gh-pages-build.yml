@@ -25,9 +25,9 @@ jobs:
           # Replace with your build steps if needed
           mkdir -p dist
           cp -r * dist/ || true
-        - name: Amend links for GitHub Pages
-          run: |
-            find dist -type f \( -name '*.html' -o -name '*.json' \) -exec sed -i 's|href="/|href="/umbral/|g;s|src="/|src="/umbral/|g;s|location": "/|location": "/umbral/|g;s|logo": "/|logo": "/umbral/|g' {} +
+      - name: Amend links for GitHub Pages
+        run: |
+          find dist -type f \( -name '*.html' -o -name '*.json' \) -exec sed -i 's|href="/|href="/umbral/|g;s|src="/|src="/umbral/|g;s|location": "/|location": "/umbral/|g;s|logo": "/|logo": "/umbral/|g' {} +
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
