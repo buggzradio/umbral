@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Umbral Dashboard</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      flex: 1;
-      padding: 2rem;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
   <header>
-    <div><strong>Umbral Dashboard</strong></div>
+    <h1>Umbral</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Docs</a>
-      <a href="#">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="games.html">Games</a>
+      <a href="settings.html">Settings</a>
     </nav>
   </header>
-  <main>
-    <h1>Welcome to Umbral Dashboard</h1>
-    <p>This is your homepage. Use the navigation above to explore features and documentation.</p>
+
+  <main class="container">
+    <h2>Welcome to Umbral</h2>
+    <p>This is your dashboard. From here you can access all sections of your website.</p>
+
+    <div class="card-grid">
+      <div class="card" onclick="location.href='games.html'">🎮 Games</div>
+      <div class="card" onclick="location.href='settings.html'">⚙️ Settings</div>
+      <div class="card" onclick="alert('More sections coming soon!')">📄 Docs</div>
+      <div class="card" onclick="alert('More sections coming soon!')">📊 Stats</div>
+    </div>
   </main>
-  <footer>
-    &copy; 2024 Umbral. All rights reserved.
-  </footer>
+
+  <script src="../assets/js/theme.js"></script>
 </body>
 </html>

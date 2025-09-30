@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umbral Settings</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Umbral</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="settings.html" class="active">Settings</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Customize Your Experience</h2>
+    <p>Change the look and feel of Umbral in real time.</p>
+
+    <form id="settings-form" class="settings-grid">
+      <div class="setting-card">
+        <label for="bgColor">Background Color</label>
+        <input type="color" id="bgColor" name="bgColor" value="#0e0f12">
+      </div>
+
+      <div class="setting-card">
+        <label for="textColor">Text Color</label>
+        <input type="color" id="textColor" name="textColor" value="#e5e7eb">
+      </div>
+
+      <div class="setting-card">
+        <label for="accentColor">Accent Color</label>
+        <input type="color" id="accentColor" name="accentColor" value="#6366f1">
+      </div>
+
+      <div class="setting-card">
+        <label for="cardBg">Card Background</label>
+        <input type="color" id="cardBg" name="cardBg" value="#202228">
+      </div>
+
+      <div style="grid-column: 1 / -1; display: flex; gap: 1rem; justify-content: center; margin-top: 1rem;">
+        <button type="submit">💾 Save Settings</button>
+        <button type="button" id="resetBtn">🔄 Reset Defaults</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../assets/js/theme.js"></script>
+</body>
+</html>
