@@ -1,0 +1,686 @@
+[
+ {
+   "name": "Melbourne",
+   "lat": -37.82003131,
+   "lng": 144.9750162,
+   "Hemisphere": "Eastern",
+   "Continent": "Australia",
+   "Country": "Australia",
+   "NationalBird": "Emu"
+ },
+ {
+   "name": "Los Angeles",
+   "lat": 33.994303,
+   "lng": -118.386307,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "Buenos Aires",
+   "lat": -34.60250161,
+   "lng": -58.39753137,
+   "Hemisphere": "Western",
+   "Continent": "South America",
+   "Country": "Argentina",
+   "NationalBird": "Rufous Hornero"
+ },
+ {
+   "name": "Sydney",
+   "lat": -33.92001097,
+   "lng": 151.1851798,
+   "Hemisphere": "Eastern",
+   "Continent": "Australia",
+   "Country": "Australia",
+   "NationalBird": "Emu"
+ },
+ {
+   "name": "San Francisco",
+   "lat": 37.786978,
+   "lng": -122.414224,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "Johannesburg",
+   "lat": -26.17004474,
+   "lng": 28.03000972,
+   "Hemisphere": "Eastern",
+   "Continent": "Africa",
+   "Country": "South Africa",
+   "NationalBird": "Blue Crane"
+ },
+ {
+   "name": "Sao Paulo",
+   "lat": -23.55867959,
+   "lng": -46.62501998,
+   "Hemisphere": "Western",
+   "Continent": "South America",
+   "Country": "Brazil",
+   "NationalBird": "Rufous-bellied Thrush"
+ },
+ {
+   "name": "Rio de Janeiro",
+   "lat": -22.92502317,
+   "lng": -43.22502079,
+   "Hemisphere": "Western",
+   "Continent": "South America",
+   "Country": "Brazil",
+   "NationalBird": "Rufous-bellied Thrush"
+ },
+ {
+   "name": "Lima",
+   "lat": -12.04801268,
+   "lng": -77.05006209,
+   "Hemisphere": "Western",
+   "Continent": "South America",
+   "Country": " Peru",
+   "NationalBird": "Andean Cock-of-the-rock"
+ },
+ {
+   "name": "Jakarta",
+   "lat": -6.174417705,
+   "lng": 106.8294376,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Indonesia",
+   "NationalBird": "Javan Hawk-eagle"
+ },
+ {
+   "name": "Nairobi",
+   "lat": -1.283346742,
+   "lng": 36.81665686,
+   "Hemisphere": "Eastern",
+   "Continent": "Africa",
+   "Country": "Kenya",
+   "NationalBird": "Lilac-breasted Roller"
+ },
+ {
+   "name": "Singapore",
+   "lat": 1.293033466,
+   "lng": 103.8558207,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Singapore",
+   "NationalBird": "Crimson Sunbird"
+ },
+ {
+   "name": "Kuala Lumpur",
+   "lat": 3.166665872,
+   "lng": 101.6999833,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Malaysia",
+   "NationalBird": "Rhinoceros Hornbill"
+ },
+ {
+   "name": "Phuket",
+   "lat": 7.883985,
+   "lng": 98.383279,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Thailand",
+   "NationalBird": "Siamese Fireback"
+ },
+ {
+   "name": "Ho Chi Minh City",
+   "lat": 10.78002545,
+   "lng": 106.6950272,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Vietnam",
+   "NationalBird": "Chim Lac"
+ },
+ {
+   "name": "Bangkok",
+   "lat": 13.74999921,
+   "lng": 100.5166447,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Thailand",
+   "NationalBird": "Siamese Fireback"
+ },
+ {
+   "name": "Manila",
+   "lat": 14.60415895,
+   "lng": 120.9822172,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Philippines",
+   "NationalBird": "Philippine Eagle"
+ },
+ {
+   "name": "Mumbai",
+   "lat": 19.01699038,
+   "lng": 72.8569893,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "India",
+   "NationalBird": "Indian Peacock"
+ },
+ {
+   "name": "Mexico City",
+   "lat": 19.44244244,
+   "lng": -99.1309882,
+   "Hemisphere": "Western",
+   "Continent": "South America",
+   "Country": "Mexico",
+   "NationalBird": "Crested Caracara"
+ },
+ {
+   "name": "Hanoi",
+   "lat": 21.03332725,
+   "lng": 105.8500142,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Vietnam",
+   "NationalBird": "Chim Lac"
+ },
+ {
+   "name": "Cancun",
+   "lat": 21.16995974,
+   "lng": -86.83000777,
+   "Hemisphere": "Western",
+   "Continent": "South America",
+   "Country": "Mexico",
+   "NationalBird": "Crested Caracara"
+ },
+ {
+   "name": "Honolulu",
+   "lat": 21.30687644,
+   "lng": -157.8579979,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "Macau",
+   "lat": 22.20299746,
+   "lng": 113.5450484,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Hong Kong",
+   "lat": 22.3049809,
+   "lng": 114.1850093,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Kolkata",
+   "lat": 22.4949693,
+   "lng": 88.32467566,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "India",
+   "NationalBird": "Indian Peacock"
+ },
+ {
+   "name": "Shenzhen",
+   "lat": 22.55237051,
+   "lng": 114.1221231,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Guangzhou",
+   "lat": 23.1449813,
+   "lng": 113.3250101,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Abu Dhabi",
+   "lat": 24.46668357,
+   "lng": 54.36659338,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "United Arab Emirates",
+   "NationalBird": "Falcon"
+ },
+ {
+   "name": "Riyadh",
+   "lat": 24.64083315,
+   "lng": 46.77274166,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Saudi Arabia",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Dubai",
+   "lat": 25.22999615,
+   "lng": 55.27997432,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "United Arab Emirates",
+   "NationalBird": "Falcon"
+ },
+ {
+   "name": "Guilin",
+   "lat": 25.2799931,
+   "lng": 110.280028,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Miami",
+   "lat": 25.7876107,
+   "lng": -80.22410608,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "Orlando",
+   "lat": 28.50997683,
+   "lng": -81.38003036,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "New Delhi",
+   "lat": 28.6699929,
+   "lng": 77.23000403,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "India",
+   "NationalBird": "Indian Peacock"
+ },
+ {
+   "name": "Cairo",
+   "lat": 30.04996035,
+   "lng": 31.24996822,
+   "Hemisphere": "Eastern",
+   "Continent": "Africa",
+   "Country": "Egypt",
+   "NationalBird": "Steppe Eagle"
+ },
+ {
+   "name": "Hangzhou",
+   "lat": 30.24997398,
+   "lng": 120.1700187,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Shanghai",
+   "lat": 31.21645245,
+   "lng": 121.4365047,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Suzhou",
+   "lat": 31.30047833,
+   "lng": 120.620017,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Amman",
+   "lat": 31.95002525,
+   "lng": 35.93329993,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Jordan",
+   "NationalBird": "Sinai Rosefinch"
+ },
+ {
+   "name": "Nanjing",
+   "lat": 32.05001914,
+   "lng": 118.7799743,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Las Vegas",
+   "lat": 36.172368,
+   "lng": -115.141052,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "Tokyo",
+   "lat": 35.68501691,
+   "lng": 139.7514074,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Japan",
+   "NationalBird": "Green Pheasant"
+ },
+ {
+   "name": "Seoul",
+   "lat": 37.5663491,
+   "lng": 126.999731,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "South Korea",
+   "NationalBird": "Black-billed Magpie"
+ },
+ {
+   "name": "Lisbon",
+   "lat": 38.72272288,
+   "lng": -9.144866305,
+   "Hemisphere": "Western",
+   "Continent": "Europe",
+   "Country": "Portugal",
+   "NationalBird": "Barcelos Rooster"
+ },
+ {
+   "name": "Beijing",
+   "lat": 39.92889223,
+   "lng": 116.3882857,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "China",
+   "NationalBird": "Red-crowned Crane"
+ },
+ {
+   "name": "Baku",
+   "lat": 40.39527203,
+   "lng": 49.86221716,
+   "Hemisphere": "Eastern",
+   "Continent": "Asia",
+   "Country": "Azerbaijan",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Madrid",
+   "lat": 40.417784,
+   "lng": -3.703786,
+   "Hemisphere": "Western",
+   "Continent": "Europe",
+   "Country": "Spain",
+   "NationalBird": "Imperial Eagle"
+ },
+ {
+   "name": "Istanbul",
+   "lat": 41.008042,
+   "lng": 28.969545,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Turkey",
+   "NationalBird": "Redwing"
+ },
+ {
+   "name": "Barcelona",
+   "lat": 41.38329958,
+   "lng": 2.183370319,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Spain",
+   "NationalBird": "Spanish Imperial Eagle"
+ },
+ {
+   "name": "Rome",
+   "lat": 41.89595563,
+   "lng": 12.48325842,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Italy",
+   "NationalBird": "Golden Eagle"
+ },
+ {
+   "name": "Sofia",
+   "lat": 42.68334943,
+   "lng": 23.31665401,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Bulgaria",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "London",
+   "lat": 42.9699986,
+   "lng": -81.24998661,
+   "Hemisphere": "Western",
+   "Continent": "Europe",
+   "Country": "UK",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Toronto",
+   "lat": 43.69997988,
+   "lng": -79.42002079,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "Canada",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Nice",
+   "lat": 43.71501772,
+   "lng": 7.265023965,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "France",
+   "NationalBird": "Gallic Rooster"
+ },
+ {
+   "name": "Florence",
+   "lat": 43.78000083,
+   "lng": 11.25000036,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Italy",
+   "NationalBird": "Golden Eagle"
+ },
+ {
+   "name": "Bucharest",
+   "lat": 44.4333718,
+   "lng": 26.09994665,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Romania",
+   "NationalBird": "Great White Pelican"
+ },
+ {
+   "name": "Venice",
+   "lat": 45.43865928,
+   "lng": 12.33499874,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Italy",
+   "NationalBird": "Golden Eagle"
+ },
+ {
+   "name": "Milan",
+   "lat": 45.4699752,
+   "lng": 9.20500891,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Italy",
+   "NationalBird": "Golden Eagle"
+ },
+ {
+   "name": "Budapest",
+   "lat": 47.491906,
+   "lng": 19.055227,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Hungary",
+   "NationalBird": "Great Bustard"
+ },
+ {
+   "name": "Munich",
+   "lat": 48.137719,
+   "lng": 11.577304,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Germany",
+   "NationalBird": "White Stork"
+ },
+ {
+   "name": "Vienna",
+   "lat": 48.207936,
+   "lng": 16.374006,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Austria",
+   "NationalBird": "Barn Swallow"
+ },
+ {
+   "name": "Paris",
+   "lat": 48.86669293,
+   "lng": 2.333335326,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "France",
+   "NationalBird": "Gallic Rooster"
+ },
+ {
+   "name": "Vancouver",
+   "lat": 49.282961,
+   "lng": -123.121133,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "Canada",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Prague",
+   "lat": 50.087614,
+   "lng": 14.420586,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Czech Republic",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Frankfurt",
+   "lat": 50.11094,
+   "lng": 8.680317,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Germany",
+   "NationalBird": "White Stork"
+ },
+ {
+   "name": "Kiev",
+   "lat": 50.43336733,
+   "lng": 30.51662797,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Ukraine",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Brussels",
+   "lat": 50.850242,
+   "lng": 4.350504,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Belgium",
+   "NationalBird": "Kestrel"
+ },
+ {
+   "name": "Warsaw",
+   "lat": 52.230577,
+   "lng": 21.012446,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Poland",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Amsterdam",
+   "lat": 52.373665,
+   "lng": 4.895211,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Netherlands",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Berlin",
+   "lat": 52.52181866,
+   "lng": 13.40154862,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Germany",
+   "NationalBird": "White Stork"
+ },
+ {
+   "name": "Dublin",
+   "lat": 53.350406,
+   "lng": -6.263313,
+   "Hemisphere": "Western",
+   "Continent": "Europe",
+   "Country": "Republic of Ireland",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Moscow",
+   "lat": 55.75216412,
+   "lng": 37.61552283,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Russia",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "New York City",
+   "lat": 40.74998,
+   "lng": -73.98,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ },
+ {
+   "name": "St Petersburg",
+   "lat": 59.93901,
+   "lng": 30.31602,
+   "Hemisphere": "Eastern",
+   "Continent": "Europe",
+   "Country": "Russia",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Marrakech",
+   "lat": 31.630682,
+   "lng": -7.985056,
+   "Hemisphere": "Western",
+   "Continent": "Africa",
+   "Country": "Morocco",
+   "NationalBird": "Sorry!  This country has no national bird"
+ },
+ {
+   "name": "Washington DC",
+   "lat": 38.89955,
+   "lng": -77.0094,
+   "Hemisphere": "Western",
+   "Continent": "North America",
+   "Country": "USA",
+   "NationalBird": "Bald Eagle"
+ }
+]

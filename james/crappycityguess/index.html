@@ -1,0 +1,303 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>CityGuesser</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.31&key=AIzaSyAWHTnGlByt3KMI3QraQwn50cwUHAA4pc0"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://gduer.github.io/CityGuesser/"><img class="logo" alt="Brand" src="logo.png"></a>
+      <a class="navbar-brand" href="https://gduer.github.io/CityGuesser/">CityGuesser</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a data-toggle="modal" href="#Instructions">Rules/Instructions</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-center">
+    <span class="navbar-text"><div id="message" class="navbar-words2"> </div></span>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <span class="navbar-text">
+        <div id="guesses" class="navbar-words"> </div>
+      </span>
+    <span class="navbar-text">
+      <div id="strikes" class="navbar-words"> </div>
+    </span>
+    <span class="navbar-text">
+      <div id="score" class="navbar-words"></div>
+    </span>
+    </ul>
+  </div>
+  </nav>
+
+    <div class="floating-menu">
+      <form action="" id=guessform>
+       <input id="guess" type="text" class="form-control form-control-lg" placeholder="Guess a City" name="Guess a City">
+       <a id="guessbutton" href="#" class="btn btn-primary" onclick="makeGuess();">Guess</a>
+       <br><br>
+       <h5> Or take a hint: </h5>
+       <div class="btn-group">
+         <button type="button" class="btn btn-warning openBtn hint" data-toggle="modal" data-target="#hint1" onclick="giveNatBirdHint();">Bird</button>
+         <button type="button" class="btn btn-warning openBtn hint" data-toggle="modal" data-target="#hint2" onclick="giveHemisphereHint();">-5</button>
+         <button type="button" class="btn btn-warning openBtn hint" data-toggle="modal" data-target="#hint3" onclick="giveContinentHint();">-10</button>
+         <button type="button" class="btn btn-warning openBtn hint" data-toggle="modal" data-target="#hint4" onclick="giveCountryHint();">-15</button>
+       </div>
+      </form>
+    </div>
+
+    <object id="places" data="places.json"></object>
+    <div id="map"></div>
+
+    <div class="modal fade" id="Instructions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Rules/Instructions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol><h4>So this is how you play the game:</h4>
+
+              <li> You Start with 100 points, and you have to identify the cities on the map.</li>
+              <li> If you guess incorrectly, you will lose points. You can only guess incorrectly three times or it's game over.</li>
+              <li> You also have four hints (Hemisphere, Continent, Country and National Bird), but each hint results in a loss of points.</li>
+              <li> When guessing the city, look at the built environment, natural landcover, and landmarks. After some exploration, this is easier than it seems!</li>
+              <li>Good luck!
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Okay, I got it.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="hint1" tabindex="-1" role="dialog" aria-labelledby="hint1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hint #1: National Bird</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id= "first_hint" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, thanks. </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="hint2" tabindex="-1" role="dialog" aria-labelledby="hint2" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hint #2: Hemisphere</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id= "second_hint" class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, thanks. </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="hint3" tabindex="-1" role="dialog" aria-labelledby="hint3" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hint #3: Continent</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id= "third_hint" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, thanks. </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="hint4" tabindex="-1" role="dialog" aria-labelledby="hint4" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hint Type #4: Country</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id= "fourth_hint" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, thanks. </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var map;
+      var latlongs;
+      var randomCity;
+      var minZoomLevel = 15;
+      var points = 100;
+      var usedNumbers = [];
+      var num;
+      var hints1=0;
+      var hints2=0;
+      var hints3=0;
+      var hints4=0;
+      var strikes = 0;
+      var guesses =0;
+      var wronglist = ["Nope.","Nah.","Definitely not that.", "Wrong."]
+
+      function getRandomInt(max) {
+        num = Math.floor(Math.random() * Math.floor(max));
+        if (usedNumbers.includes(num)){
+          return getRandomInt(max);
+        }
+        else{
+          if (usedNumbers.length == latlongs.length){
+            usedNumbers = []
+          }
+          else{
+            usedNumbers.push(num)
+            return num
+          }
+        }
+      }
+
+      document.getElementById("score").innerHTML = "Points: " + points;
+      document.getElementById("strikes").innerHTML = "Strikes: " + strikes;
+      document.getElementById("guesses").innerHTML = "Guesses: " + guesses;
+
+      var object = document.getElementById("places");
+
+      function makeGuess() {
+        var guess = document.getElementById("guess").value;
+        if (guess.toLowerCase().trim().replace(/\./g,"").replace("city","").replace(/\s+/g, '') == randomCity.name.toLowerCase().trim().replace(/\./g,"").replace("city","").replace(/\s+/g, '')){
+          points = points + 20;
+          guesses = 0;
+          document.getElementById("message").innerHTML = "That's right!!!!";
+          document.getElementById("score").innerHTML = "Points: " + points;
+          document.getElementById("guesses").innerHTML = "Guesses: " + guesses;
+          object.onload();
+
+        }
+        else {
+          document.getElementById("message").innerHTML = wronglist[Math.floor(Math.random()*wronglist.length)];
+          document.getElementById("score").innerHTML = "Points: " + points;
+          guesses ++;
+          document.getElementById("guesses").innerHTML = "Guesses: " + guesses;
+          if (guesses == 3){
+            strikes++;
+            guesses = 0;
+            document.getElementById("strikes").innerHTML = "Strikes: " + strikes;
+            document.getElementById("message").innerHTML = "Sorry. The answer was " + randomCity.name;
+            object.onload();
+          }
+          if (strikes == 3){
+            gameOver();
+          }
+        }
+        document.getElementById("guess").value = "";
+      }
+
+      object.onload = function() {
+        latlongs = eval(object.contentDocument.body.childNodes[0].innerHTML);
+        randomCity = latlongs[getRandomInt(latlongs.length)];
+        initMap();
+      };
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: randomCity.lat, lng: randomCity.lng},
+          zoom: minZoomLevel,
+          mapTypeId: 'satellite',
+          disableDefaultUI: true
+        })
+        google.maps.event.addListener(map, 'zoom_changed', function() {
+        if (map.getZoom() < minZoomLevel) {map.setZoom(minZoomLevel);}});
+        }
+
+
+
+        document.getElementById('guess').onkeydown = function(event) {
+            if (event.keyCode == 13) {
+              makeGuess();
+              return event.keyCode != 13;
+            }
+        }
+
+      function gameOver(){
+        alert("GAME OVER! Your final score is " + points)
+        location.reload();
+      }
+
+      function giveHemisphereHint(){
+          if (hints1 == 0){
+          points = points - 5;
+          document.getElementById("second_hint").innerHTML = "This place is in the " + randomCity.Hemisphere + " hemisphere.";
+          hints1 ++;
+          } else {
+            document.getElementById("second_hint").innerHTML = "You've already used this hint..."
+            } document.getElementById("score").innerHTML = "Points: " + points;
+        }
+      function giveContinentHint(){
+          if (hints2 == 0) {
+          points = points - 10
+          document.getElementById("third_hint").innerHTML = "This place is in the continent of " + randomCity.Continent + ".";
+          hints2 ++;
+          } else {
+              document.getElementById("third_hint").innerHTML = "You've already used this hint..."
+            } document.getElementById("score").innerHTML = "Points: " + points;
+      }
+      function giveCountryHint(){
+          if (hints3 == 0) {
+          points = points - 15
+          document.getElementById("fourth_hint").innerHTML = "This place is in " + randomCity.Country + ".";
+          hints3 ++;
+          }  else {
+            document.getElementById("fourth_hint").innerHTML = "You've already used this hint..."
+            } document.getElementById("score").innerHTML = "Points: " + points;
+      }
+        function giveNatBirdHint(){
+          if (hints4 == 0) {
+          document.getElementById("first_hint").innerHTML = "The National Bird of the country of this city is the " + randomCity.NationalBird + ". Hopefully that's helpful!";
+          } else {
+            document.getElementById("first_hint").innerHTML = "You've already used this hint..."
+            } document.getElementById("score").innerHTML = "Points: " + points;
+        }
+
+
+    </script>
+
+  </body>
+</html>

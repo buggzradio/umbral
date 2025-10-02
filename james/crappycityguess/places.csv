@@ -1,0 +1,77 @@
+name,lat,lng,Hemisphere,Continent,Country,NationalBird
+Melbourne,-37.82003131,144.9750162,Eastern,Australia,Australia,Emu
+Los Angeles,33.994303,-118.386307,Western,North America,USA,Bald Eagle
+Buenos Aires,-34.60250161,-58.39753137,Western,South America,Argentina,Rufous Hornero
+Sydney,-33.92001097,151.1851798,Eastern,Australia,Australia,Emu
+San Francisco,37.786978,-122.414224,Western,North America,USA,Bald Eagle
+Johannesburg,-26.17004474,28.03000972,Eastern,Africa,South Africa,Blue Crane
+Sao Paulo,-23.55867959,-46.62501998,Western,South America,Brazil,Rufous-bellied Thrush
+Rio de Janeiro,-22.92502317,-43.22502079,Western,South America,Brazil,Rufous-bellied Thrush
+Lima,-12.04801268,-77.05006209,Western,South America, Peru,Andean Cock-of-the-rock
+Jakarta,-6.174417705,106.8294376,Eastern,Asia,Indonesia,Javan Hawk-eagle
+Nairobi,-1.283346742,36.81665686,Eastern,Africa,Kenya,Lilac-breasted Roller
+Singapore,1.293033466,103.8558207,Eastern,Asia,Singapore,Crimson Sunbird
+Kuala Lumpur,3.166665872,101.6999833,Eastern,Asia,Malaysia,Rhinoceros Hornbill
+Phuket,7.883985,98.383279,Eastern,Asia,Thailand,Siamese Fireback
+Ho Chi Minh City,10.78002545,106.6950272,Eastern,Asia,Vietnam,Chim Lac
+Bangkok,13.74999921,100.5166447,Eastern,Asia,Thailand,Siamese Fireback
+Manila,14.60415895,120.9822172,Eastern,Asia,Philippines,Philippine Eagle
+Mumbai,19.01699038,72.8569893,Eastern,Asia,India,Indian Peacock
+Mexico City,19.44244244,-99.1309882,Western,South America,Mexico,Crested Caracara
+Hanoi,21.03332725,105.8500142,Eastern,Asia,Vietnam,Chim Lac
+Cancun,21.16995974,-86.83000777,Western,South America,Mexico,Crested Caracara
+Honolulu,21.30687644,-157.8579979,Western,North America,USA,Bald Eagle
+Macau,22.20299746,113.5450484,Eastern,Asia,China,Red-crowned Crane
+Hong Kong,22.3049809,114.1850093,Eastern,Asia,China,Red-crowned Crane
+Kolkata,22.4949693,88.32467566,Eastern,Asia,India,Indian Peacock
+Shenzhen,22.55237051,114.1221231,Eastern,Asia,China,Red-crowned Crane
+Guangzhou,23.1449813,113.3250101,Eastern,Asia,China,Red-crowned Crane
+Abu Dhabi,24.46668357,54.36659338,Eastern,Asia,United Arab Emirates,Falcon
+Riyadh,24.64083315,46.77274166,Eastern,Asia,Saudi Arabia,Sorry!  This country has no national bird
+Dubai,25.22999615,55.27997432,Eastern,Asia,United Arab Emirates,Falcon
+Guilin,25.2799931,110.280028,Eastern,Asia,China,Red-crowned Crane
+Miami,25.7876107,-80.22410608,Western,North America,USA,Bald Eagle
+Orlando,28.50997683,-81.38003036,Western,North America,USA,Bald Eagle
+New Delhi,28.6699929,77.23000403,Eastern,Asia,India,Indian Peacock
+Cairo,30.04996035,31.24996822,Eastern,Africa,Egypt,Steppe Eagle
+Hangzhou,30.24997398,120.1700187,Eastern,Asia,China,Red-crowned Crane
+Shanghai,31.21645245,121.4365047,Eastern,Asia,China,Red-crowned Crane
+Suzhou,31.30047833,120.620017,Eastern,Asia,China,Red-crowned Crane
+Amman,31.95002525,35.93329993,Eastern,Asia,Jordan,Sinai Rosefinch
+Nanjing,32.05001914,118.7799743,Eastern,Asia,China,Red-crowned Crane
+Las Vegas,36.172368,-115.141052,Western,North America,USA,Bald Eagle
+Tokyo,35.68501691,139.7514074,Eastern,Asia,Japan,Green Pheasant
+Seoul,37.5663491,126.999731,Eastern,Asia,South Korea,Black-billed Magpie
+Lisbon,38.72272288,-9.144866305,Western,Europe,Portugal,Barcelos Rooster
+Beijing,39.92889223,116.3882857,Eastern,Asia,China,Red-crowned Crane
+Baku,40.39527203,49.86221716,Eastern,Asia,Azerbaijan,Sorry!  This country has no national bird
+Madrid,40.417784,-3.703786,Western,Europe,Spain,Imperial Eagle
+Istanbul,41.008042,28.969545,Eastern,Europe,Turkey,Redwing
+Barcelona,41.38329958,2.183370319,Eastern,Europe,Spain,Spanish Imperial Eagle
+Rome,41.89595563,12.48325842,Eastern,Europe,Italy,Golden Eagle
+Sofia,42.68334943,23.31665401,Eastern,Europe,Bulgaria,Sorry!  This country has no national bird
+London,42.9699986,-81.24998661,Western,Europe,UK,Sorry!  This country has no national bird
+Toronto,43.69997988,-79.42002079,Western,North America,Canada,Sorry!  This country has no national bird
+Nice,43.71501772,7.265023965,Eastern,Europe,France,Gallic Rooster
+Florence,43.78000083,11.25000036,Eastern,Europe,Italy,Golden Eagle
+Bucharest,44.4333718,26.09994665,Eastern,Europe,Romania,Great White Pelican
+Venice,45.43865928,12.33499874,Eastern,Europe,Italy,Golden Eagle
+Milan,45.4699752,9.20500891,Eastern,Europe,Italy,Golden Eagle
+Budapest,47.491906,19.055227,Eastern,Europe,Hungary,Great Bustard
+Munich,48.137719,11.577304,Eastern,Europe,Germany,White Stork
+Vienna,48.207936,16.374006,Eastern,Europe,Austria,Barn Swallow
+Paris,48.86669293,2.333335326,Eastern,Europe,France,Gallic Rooster
+Vancouver,49.282961,-123.121133,Western,North America,Canada,Sorry!  This country has no national bird
+Prague,50.087614,14.420586,Eastern,Europe,Czech Republic,Sorry!  This country has no national bird
+Frankfurt,50.11094,8.680317,Eastern,Europe,Germany,White Stork
+Kiev,50.43336733,30.51662797,Eastern,Europe,Ukraine,Sorry!  This country has no national bird
+Brussels,50.850242,4.350504,Eastern,Europe,Belgium,Kestrel
+Warsaw,52.230577,21.012446,Eastern,Europe,Poland,Sorry!  This country has no national bird
+Amsterdam,52.373665,4.895211,Eastern,Europe,Netherlands,Sorry!  This country has no national bird
+Berlin,52.52181866,13.40154862,Eastern,Europe,Germany,White Stork
+Dublin,53.350406,-6.263313,Western,Europe,Republic of Ireland,Sorry!  This country has no national bird
+Moscow,55.75216412,37.61552283,Eastern,Europe,Russia,Sorry!  This country has no national bird
+New York City,40.74998,-73.98,Western,North America,USA,Bald Eagle
+St Petersburg,59.93901,30.31602,Eastern,Europe,Russia,Sorry!  This country has no national bird
+Marrakech,31.630682,-7.985056,Western,Africa,Morocco,Sorry!  This country has no national bird
+Washington DC,38.89955,-77.0094,Western,North America,USA,Bald Eagle

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - BuggzBuilt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://yt3.googleusercontent.com/_KpvkK8sZyVtCyvg2B8soFFfrEF5bmQPG7TOeGB4APaneShcf4OlHNP3hV9-BpD8S6o5fTS0jQ=s900-c-k-c0x00ffffff-no-rj">
+
+</head>
+<body>
+    <header>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="https://i0.wp.com/www.patspropaganda.com/wp-content/uploads/2020/07/Dumpster-fire-pic.jpg?resize=1024%2C1024&ssl=1" alt="Logo">
+        </div>
+        
+        <!-- Title Section -->
+        <div class="title">
+            DF by Buggz        
+        </div>
+        
+        <!-- Navigation Menu -->
+
+
+<!-- Button Section -->
+<div class="buttons">
+    <!-- Link buttons -->
+    <a href="/jarbeefis">
+        <button class="btn">Home</button>
+    </a>
+    <a href="/jarbeefis/james">
+        <button class="btn">Games</button>
+    </a>
+    <a href="/jarbeefis/contact">
+        <button class="btn">Contact</button>
+    </a>
+    <a href="/jarbeefis/hahafunny">
+        <button class="btn">Funny Stuff</button>
+    </a>
+    <a href="https://discord.gg/VMf92b5D3f" target="_blank">
+        <button class="btn">Join the Discord!</button>
+    </a>
+    <button class="btn" onclick="changePanicSettings()">Change Panic Key</button>
+</div>
+
+    </header>
+
+
+    
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for a game..." onkeyup="filterGames()">
+    </div>
+    <div class="games-grid">
+        <a href="/jarbeefis/james/wordle/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://cdn.mos.cms.futurecdn.net/zahomcjNCUokHHj4KDKz8E.png" alt="Snow Rider 3D">
+            <h3>Wordle Unlimited</h3>
+        </a>
+        <a href="/jarbeefis/james/progress/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/IdW12d5UllWdq67LVDPvUZY82XGL0WRcOcQnwi_HfvnpD3Dn_LBXWH-whAfJiaOymw" alt="Snow Rider 3D">
+            <h3>Progress Knight</h3>
+        </a>
+        <a href="/jarbeefis/james/russian-roulette/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Russian_Roulette_%28Alchemist_album%29.jpg/220px-Russian_Roulette_%28Alchemist_album%29.jpg" alt="Snow Rider 3D">
+            <h3>Russian Roulette</h3>
+        </a>
+        <a href="/jarbeefis/james/blockblast/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://store-images.s-microsoft.com/image/apps.12438.14053817393525556.f5c7b5b6-8420-4484-b895-4b730c33c5d0.c7b90361-2458-4983-89bd-23377be924e4?mode=scale&q=90&h=225&w=150" alt="Snow Rider 3D">
+            <h3>Block Blast</h3>
+        </a>
+        <a href="/jarbeefis/james/blackjack/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://crescent.edu/uploads/editor/images/Blackjack.png" alt="Snow Rider 3D">
+            <h3>BlackJack</h3>
+        </a>
+        <a href="/jarbeefis/james/snorider/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJy4pM2G_0ViLxs6g-mq68YS7RRUv_XUHg4w&s" alt="Snow Rider 3D">
+            <h3>Snow Rider 3D</h3>
+        </a>
+        <a href="/jarbeefis/james/monkey-mart/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/ce4a204b6d2cc99d1879da0b2282b0d8.png" alt="Snow Rider 3D">
+            <h3>Monkey Mart</h3>
+        </a>
+        <a href="/jarbeefis/james/tunnel-rush/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://tunnelrushgame.io/data/image/tunnel-rush.png" alt="Snow Rider 3D">
+            <h3>Tunnel Rush</h3>
+        </a>
+        <a href="/jarbeefis/james/chrome-dino/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg" alt="Snow Rider 3D">
+            <h3>Chrome Dino Game Thing</h3>
+        </a>
+        <a href="/jarbeefis/james/eaglercraft" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="data:image/jpeg;base64,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" alt="Snow Rider 3D">
+            <h3>Eagle Craft<br>(Stable)</h3>
+        </a>
+        <a href="/jarbeefis/james/basket-random" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/gP8T5Z1O-ngxIloiwcBZzrzyLPYDp0R_1BDNKUDZboIRPVImeyWI8-7aExvB9gAGNKc" alt="Snow Rider 3D">
+            <h3>Basket Random</h3>
+        </a>
+        <a href="/jarbeefis/james/10-minutes-till-dawn" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/10-Minutes-Till-Dawn-Header.jpg" alt="Snow Rider 3D">
+            <h3>10 Minutes Till' Dawn</h3>
+        </a>
+        <a href="/jarbeefis/james/abandoned" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgEXw3hKtMz5-LJylc2CqW73Qmi5w3awgrEM3MsnpOOgOB39zL" alt="Snow Rider 3D">
+            <h3>Abandoned</h3>
+        </a>
+        <a href="/jarbeefis/james/another-gentlemans-adventure" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://www.coolmathgames.com/sites/default/files/another-gentelmans-adventure.jpg" alt="Snow Rider 3D">
+            <h3>Another Gentlemans Adventure</h3>
+        </a>
+        <a href="/jarbeefis/james/fireboy-and-watergirl" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/6N_ON50BZiEAe-ll2lM92NrVrgp5I5Ha6VI0a4Usw7uPmgEjL6tgJR6jWYUkkYgx2LM" alt="Snow Rider 3D">
+            <h3>Fireboy and Watergirl</h3>
+        </a>
+        <a href="/jarbeefis/james/fireboy-and-watergirl-2" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/6N_ON50BZiEAe-ll2lM92NrVrgp5I5Ha6VI0a4Usw7uPmgEjL6tgJR6jWYUkkYgx2LM" alt="Snow Rider 3D">
+            <h3>Fireboy and Watergirl 2</h3>
+        </a>
+        <a href="/jarbeefis/james/fireboy-and-watergirl-3" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/6N_ON50BZiEAe-ll2lM92NrVrgp5I5Ha6VI0a4Usw7uPmgEjL6tgJR6jWYUkkYgx2LM" alt="Snow Rider 3D">
+            <h3>Fireboy and Watergirl 3</h3>
+        </a>
+        <a href="/jarbeefis/james/fireboy-and-watergirl-4" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/6N_ON50BZiEAe-ll2lM92NrVrgp5I5Ha6VI0a4Usw7uPmgEjL6tgJR6jWYUkkYgx2LM" alt="Snow Rider 3D">
+            <h3>Fireboy and Watergirl 4</h3>
+        </a>
+        <a href="/jarbeefis/james/subwaysurfers/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/3660e32ebe83bc65e05a81b335f74823.png" alt="Subway Surfers 2.01">
+            <h3>Subway Surfers 2.01</h3>
+        </a>
+        <a href="/jarbeefis/james/subway-surfers-ny" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.nutwg.com/uploads/sites/2/2023/09/2023-08-31-170659831.webp" alt="Subway Surfers 2.01">
+            <h3>Subway Surfers New York</h3>
+        </a>
+        <a href="/jarbeefis/james/1v1lol" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_lol.onevone.jpg" alt="1v1 LOL xd">
+            <h3>1v1 LOL xd</h3>
+        </a>
+        <a href="/jarbeefis/james/tinyfishing" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/c8cb366d52fc2a67fb313c344efdbc9e.png" alt="Tiny Fishing">
+            <h3>Tiny Fishing</h3>
+        </a>
+        <a href="/jarbeefis/james/cookieclick" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/7QdF1mILpUj-xtZGzNwECuVHaVKJHobvYh45z9q7hGvCbmjH1oD_ZfRxbEqbB_yb6Dk" alt="Cookie Clicker">
+            <h3>Cookie Clicker</h3>
+        </a>
+        <a href="/jarbeefis/james/driftboss" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://images.crazygames.com/games/drift-boss/cover-1626884625264.png?auto=format,compress&q=75&cs=strip" alt="DriftBoss">
+            <h3>DriftBoss</h3>
+        </a>
+        <a href="/jarbeefis/james/2048" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/2048_logo.svg/1200px-2048_logo.svg.png" alt="2048">
+            <h3>2048</h3>
+        </a>
+        <a href="/jarbeefis/james/diablo" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkMgSHcPFJsfUJ0B23kcmQmLik7-F4-UbXEQ&s" alt="Diablo">
+            <h3>Diablo</h3>
+        </a>
+        <a href="/jarbeefis/james/tower-defense" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZl4GJcXXKOGzCyKNh7EOtyd8JiySMofw1Pw&s" alt="Tower Defense">
+            <h3>Tower Defense</h3>
+        </a>
+        <a href="/jarbeefis/james/hex-gl" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZma7r84hfKzcS8Y3ZW_5-ii8l5c33BUXS3Q&s" alt="HexGL">
+            <h3>HexGL</h3>
+        </a>
+        <a href="/jarbeefis/james/uphillbussim" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.gamedistribution.com/7af48c5ae6044b5087a82621f712b052-512x512.jpeg" alt="Uphill Bus Simulator 3D">
+            <h3>Uphill Bus Simulator 3D</h3>
+        </a>
+        <a href="/jarbeefis/james/smashkarts" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://yt3.googleusercontent.com/f4e3X0TDQ6edrwk29w6pBgxLdTnNUvZdBkDGDO0zqlWXY6NGVjdDvlTKhyg4apwjykBu-hSGuw=s900-c-k-c0x00ffffff-no-rj" alt="Smash Karts">
+            <h3>Smash Karts</h3>
+        </a>
+        <a href="https://buggzradio.github.io/acoustic/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://media.sketchfab.com/models/84305fc12d3a42f1aa7a14d5643207d5/thumbnails/a388d60bbfbb4444afeb3e675683a3e8/bc6c8098736d4dcbbbd44ccd95b016c4.jpeg" alt="3D City">
+            <h3>3D City</h3>
+        </a>
+        <a href="/jarbeefis/james/g-switch" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/ylSOEyk2tG390Pm4-IRUlMVtjNuYnxgX1aTm6ZxC_I6hCHjanvHFgZkCCw73sGE3lg" alt="G Switch">
+            <h3>G Switch</h3>
+        </a>
+        <a href="/jarbeefis/james/trafficjam3d" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://trafficjam3d.github.io/traffic-jam-3d/logo.png" alt="Traffic Jam 3D">
+            <h3>Traffic Jam 3D</h3>
+        </a>
+        <a href="/jarbeefis/james/flightfs" target="_blank" rel="noopener noreferrer"  class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSPaqJbOMWdH080UdXhtH-9gYq8zRycq4W8g&s" alt="Flight Sim">
+            <h3>Flight Sim</h3>
+        </a>
+
+        <a href="/jarbeefis/james/worldshardest2" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://www.iqutest.com/wp-content/uploads/2024/08/Worlds-Hardest-Game-2.jpg" alt="World's Hardest Game 2">
+            <h3>World's Hardest Game 2</h3>
+        </a>
+  
+        <a href="/jarbeefis/james/retro-bowl" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/bf/Retro_Bowl_cover.png" alt="Retro Bowl">
+            <h3>Retro Bowl</h3>
+        </a>
+
+        <a href="/jarbeefis/james/slope" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://assets.bitent.com/images/games/thumbs/ik/334x334/slope_big_6050caa705d46.png" alt="Slope">
+            <h3>Slope</h3>
+        </a>
+
+        <a href="/jarbeefis/james/awesometanks" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://www.coolmathgames.com/sites/default/files/AwesomeTanks_OG-logo.jpg" alt="Awesome Tanks">
+            <h3>Awesome Tanks</h3>
+        </a>
+
+        <a href="/jarbeefis/james/bitlife" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://d.newsweek.com/en/full/1317374/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg?w=1600&h=1600&q=88&f=75befc746fb83a0c568c44ca07bc5e64" alt="BitLife">
+            <h3>BitLife (not blocked anymore)</h3>
+        </a>
+        
+        <a href="/jarbeefis/james/eggycar" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://cdna.artstation.com/p/assets/images/images/068/606/542/large/dakota-hines-eggy-car.jpg?1698230263" alt="Eggy Car">
+            <h3>Eggy Car</h3>
+        </a>
+ 
+        <a href="/jarbeefis/james/slitherio" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://static.wikia.nocookie.net/smosh/images/1/1b/Slither.io.png/revision/latest?cb=20190725104840" alt="Slither IO Knockoff">
+            <h3>Slither IO Knockoff</h3>
+        </a>
+
+        <a href="/jarbeefis/james/dino3d" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://elgoog.im/assets/p/dinosaur-game/3d/media/dinosaur-game-t-rex-run-3d.jpg" alt="Dino Run 3D">
+            <h3>Dino Run 3D</h3>
+        </a>
+
+        <a href="/jarbeefis/james/run3" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d3c19e9b-9b7b-4a54-9cb5-6188a5bd7d3b.png" alt="Run 3">
+            <h3>Run 3</h3>
+        </a>
+
+        <a href="/jarbeefis/james/reactor" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQZqgX01gI_vDjBjvVEJNkGpOrq7aTvvo3A&s" alt="Reactor">
+            <h3>Reactor</h3>
+        </a>
+
+        <a href="/jarbeefis/james/college-rb" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d98547374c4129bf441b754d495e41aa.png" alt="College Retro Bowl">
+            <h3>College Retro Bowl</h3>
+        </a>
+
+        <a href="/jarbeefis/james/gta" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.gamedistribution.com/1e4fd1ecada740c29e31fafc39aa8adc-512x512.jpeg" alt="GTA Knockoff">
+            <h3>GTA Knockoff</h3>
+        </a>
+
+        <a href="/jarbeefis/james/ski" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgsFnlCiPf8APa07RUuzB0c1iAAy8yDVKAw&s" alt="Ski 3D X3M">
+            <h3>Ski 3D X3M</h3>
+        </a>
+
+        <a href="/jarbeefis/james/stunt-biker" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://play-lh.googleusercontent.com/1lHJ1_FdG4ME_1bL6XSM6zmSvcy2g1TA4bjvMmnZz7kdzHSaTV501vqW-RCnVCXOq-uG=w526-h296-rw" alt="Stunt Biker 3D">
+            <h3>Stunt Biker 3D</h3>
+        </a>
+   
+        <a href="/jarbeefis/james/motox3mnormal" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://i.ytimg.com/vi/NAxG8Bsv-zA/maxresdefault.jpg" alt="Moto X3M">
+            <h3>Moto X3M</h3>
+        </a>
+
+        <a href="/jarbeefis/james/motox3m" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://www.coolmathgames.com/sites/default/files/MotoX3M-Winter_OG-logo.jpg" alt="Moto X3M Winter">
+            <h3>Moto X3M Winter</h3>
+        </a>
+
+        <a href="/jarbeefis/james/firewater" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://fireboy-andwatergirl.io/data/image/options/favicon1.png" alt="Fireboy and Watergirl">
+            <h3>Fireboy and Watergirl</h3>
+        </a>
+
+        <a href="https://orange-robot-5g4jq9rg9g94cp799-8080.app.github.dev/" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://discord.do/wp-content/uploads/2024/04/Interstellar.jpg" alt="Interstellar">
+            <h3>Interstellar (Ask me to start)</h3>
+        </a>
+
+        <a href="/jarbeefis/james/candyjam" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="/path/to/candyjam.jpg" alt="Candy Jam">
+            <h3>Candy Jam</h3>
+        </a>
+
+        <a href="/jarbeefis/james/elemental" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://mindstec.com/wp-content/uploads/2020/07/ElementOneLogo_250x250.png" alt="Elemental One">
+            <h3>Elemental One</h3>
+        </a>
+
+        <a href="/jarbeefis/james/rainbow" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://parade.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3NTcwOTU3MTY5MTQxNDQy/olivia-dunne-net-worth.jpg" alt="Rainbow Stacker (Meme)">
+            <h3>Rainbow Stacker (Meme)</h3>
+        </a>
+
+        <a href="/jarbeefis/james/vex6" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://red-ball4.com/data/image/vex-6-game.png" alt="Vex 6">
+            <h3>Vex 6</h3>
+        </a>
+
+        <a href="/jarbeefis/james/basketball-stars" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://images.crazygames.com/games/basketball-stars-2019/cover-1583231506155.png?auto=format,compress&q=75&cs=strip" alt="Basketball Stars">
+            <h3>Basketball Stars</h3>
+        </a>
+
+        <a href="/jarbeefis/james/crossyroad" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjZlZTI1NzktMmU1MS00Njk3LWE3NzEtY2IwNmE3NmJlMDJjXkEyXkFqcGc@._V1_.jpg" alt="Crossy Road">
+            <h3>Crossy Road</h3>
+        </a>
+
+        <a href="/jarbeefis/james/temple-run-2" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/f4b3ac7fe25cad9bc028b33f7a407f28.png" alt="Temple Run 2">
+            <h3>Temple Run 2</h3>
+        </a>
+
+        <a href="/jarbeefis/james/geometry-dash-lite" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://m.media-amazon.com/images/I/61+EFvroCVL.png" alt="Geometry Dash Lite">
+            <h3>Geometry Dash Lite</h3>
+        </a>
+
+        <a href="/jarbeefis/james/brawl-stars-project-laser" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX2tfySelV6KYoMV3hN48Cqr5UkE_LWRNSQ&s" alt="Brawl Stars: Project Laser">
+            <h3>Brawl Stars: Project Laser</h3>
+        </a>
+
+        <a href="/jarbeefis/james/there-is-no-game" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/1241700/header.jpg?t=1666983908" alt="There is No Game">
+            <h3>There is No Game</h3>
+        </a>
+        <a href="/jarbeefis/james/crappycityguess" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_o-ZtpGCuCj-Ft-MOPNbzTm989SIh0Elx5Q&s" alt="There is No Game">
+            <h3>Crappy City Guesser</h3>
+        </a>
+        <a href="/jarbeefis/james/codingtown" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://www.scriptacademy.net/static/img/game_home.png" alt="There is No Game">
+            <h3>Coding Town</h3>
+        </a>
+        <a href="/jarbeefis/games/eaglercraftx" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="data:image/jpeg;base64,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" alt="Snow Rider 3D">
+            <h3>Eagle Craft X</h3>
+        </a>
+        <a href="/jarbeefis/james/cookie-clicker" target="_blank" rel="noopener noreferrer" class="game-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWv0INlOqaCpFF8ChucxuXwep569rIER5sA&s" alt="Snow Rider 3D">
+            <h3>Cookie Clicker 2.052</h3>
+        </a>
+</div>
+
+<footer>
+    <!-- Footer Content -->
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="https://i0.wp.com/www.patspropaganda.com/wp-content/uploads/2020/07/Dumpster-fire-pic.jpg?resize=1024%2C1024&ssl=1" alt="Footer Logo">
+        </div>
+        
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="footer-socials">
+            <a href="#">Facebook</a>
+
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        &copy; 2025 Buggz | All rights reserved.
+    </div>
+</footer>
+
+
+  
+
+<script>
+    function filterGames() {
+        const searchValue = document.getElementById('search').value.toLowerCase();
+        const games = document.querySelectorAll('.game-item');
+
+        games.forEach(game => {
+            const title = game.querySelector('h3').innerText.toLowerCase();
+            if (title.includes(searchValue)) {
+                game.style.display = 'block';
+            } else {
+                game.style.display = 'none';
+            }
+        });
+    }
+</script>
+    
+<script>
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const newTab = window.open('about:blank');
+        const newDoc = newTab.document;
+        fetch(this.href)
+          .then(response => response.text())
+          .then(html => newDoc.write(html))
+          .catch(err => newDoc.write('<h1>Failed to load page</h1>'));
+      });
+    });
+  </script>
+  
+
+
+</body>
+</html>

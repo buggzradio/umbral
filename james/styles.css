@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c; /* Darker background for header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Image */
+.logo img {
+    height: 75px; /* Adjust logo size */
+}
+
+/* Header Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e5e5e5; /* Light text for title */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4caf50; /* Highlight on hover */
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.buttons button {
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: #333; /* Dark button background */
+    color: #fff; /* Light text color */
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #4caf50; /* Green background on hover */
+    color: #121212; /* Dark text color on hover */
+}
+
+.buttons button:focus {
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .buttons {
+        margin-top: 20px;
+        gap: 10px;
+    }
+}
+/* Header Styles */
+
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-item {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: normal;
+    background-color: #333; /* Dark button background */
+    color: #fff; /* Light text color */
+    border: 1px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 35px #4caf50;
+    background-color: #4caf50; /* Green background on hover */
+    color: #121212; /* Dark text color on hover */
+    font-weight: bold;
+}
+
+.game-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1c1c1c; /* Darker background for footer */
+    color: #e5e5e5; /* Light text for footer */
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links ul li {
+    display: inline;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4caf50; /* Highlight on hover */
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #4caf50; /* Highlight on hover */
+}
+
+.footer-bottom {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
