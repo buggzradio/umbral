@@ -183,6 +183,7 @@
       <a href="index.html">Home</a>
       <a href="games.html" class="active">Games</a>
       <a href="settings.html">Settings</a>
+      <a href="#" onclick="logout()">Logout</a>
     </nav>
   </header>
 
@@ -465,6 +466,14 @@
 
     </div>
   </main>
+
+  <script>
+  function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("currentUser");
+    window.location.href = "/umbral/";
+  }
+</script>
 
   <script>
     // Grid/List toggle
