@@ -7,12 +7,20 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
+  <script>
+  // Redirect if not logged in
+  if(localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "/umbral"; // change path to your login page
+  }
+</script>
+
   <header>
     <h1>Umbral</h1>
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="games.html">Games</a>
       <a href="settings.html">Settings</a>
+      <a href="#" onclick="logout()">Logout</a>
     </nav>
   </header>
 
@@ -29,5 +37,13 @@
   </main>
 
   <script src="../assets/js/theme.js"></script>
+
+  <script>
+  function logout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("currentUser");
+    window.location.href = "/umbral/";
+  }
+</script>
 </body>
 </html>

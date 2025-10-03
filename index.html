@@ -21,7 +21,6 @@
       font-size: var(--font-size, 1rem);
       transition: background 0.3s, color 0.3s, font-size 0.3s;
     }
-    /* Flowing purple hue background */
     body::before {
       content: '';
       position: fixed;
@@ -102,9 +101,11 @@
       text-shadow: 0 2px 8px #6200ea44;
     }
   </style>
-
+</head>
+<body>
   <div class="login-box">
     <h2>Login</h2>
+    <p style="color: #c2c2c2;">New users, use "guest" and "password"</p>
     <input type="text" id="username" placeholder="Username">
     <input type="password" id="password" placeholder="Password">
     <button onclick="login()">Enter</button>
@@ -112,34 +113,43 @@
   </div>
 
   <script>
-    // List of allowed usernames and passwords
     const users = {
       "user1": "pass1",
       "user2": "pass2",
       "admin": "admin123",
-      "guest": "3191021"
+      "guest": "password"
     };
-    // Redirect path after successful login
+
     const redirectPath = "/umbral/dashboard";
+
     function login() {
       const usernameInput = document.getElementById("username").value;
       const passwordInput = document.getElementById("password").value;
       const error = document.getElementById("error");
+
       if(users[usernameInput] && users[usernameInput] === passwordInput) {
         // Successful login
         error.style.display = "none";
+
+        // Save login state
+        localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("currentUser", usernameInput);
+
+        // Redirect
         window.location.href = redirectPath;
       } else {
         // Incorrect login
         error.style.display = "block";
       }
     }
+
     // Sitewide settings loader
     function applySitewideSettings() {
       const theme = localStorage.getItem('theme') || 'dark';
       const fontSize = localStorage.getItem('fontSize') || 'normal';
       const accentColor = localStorage.getItem('accentColor') || '#6200ea';
       const reducedMotion = localStorage.getItem('reducedMotion') === 'true';
+
       if (theme === 'light') {
         document.body.style.setProperty('--bg-color', '#f5f5fa');
         document.body.style.setProperty('--text-color', '#22223a');
@@ -147,12 +157,15 @@
         document.body.style.setProperty('--bg-color', '#121212');
         document.body.style.setProperty('--text-color', '#e0e0e0');
       }
+
       document.body.style.setProperty('--accent-color', accentColor);
+
       if (fontSize === 'large') {
         document.body.style.setProperty('--font-size', '1.25rem');
       } else {
         document.body.style.setProperty('--font-size', '1rem');
       }
+
       if (reducedMotion) {
         document.body.style.setProperty('transition', 'none');
       } else {
@@ -160,7 +173,6 @@
       }
     }
     applySitewideSettings();
-  </script>
   </script>
 </body>
 </html>

@@ -170,6 +170,13 @@
   </style>
 </head>
 <body>
+  <script>
+  // Redirect if not logged in
+  if(localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "/umbral/"; // change path to your login page
+  }
+</script>
+
   <header>
     <h1>Umbral</h1>
     <nav>
@@ -197,14 +204,10 @@
         <img src="https://dashboard.snapcraft.io/site_media/appmedia/2021/06/icon_iGNi4SP.png" alt="2048">
         2048
       </div>
-      <div class="card" data-name="2048" onclick="location.href='/umbral/dashboard/games/2048'">
-  <img src="https://via.placeholder.com/150" alt="2048">
-  2048
-</div>
-<div class="card" data-name="A Dark Room" onclick="location.href='/umbral/dashboard/games/a-dark-room'">
-  <img src="https://via.placeholder.com/150" alt="a-dark-room">
-  A Dark Room
-</div>
+      <div class="card" data-name="A Dark Room" onclick="location.href='/umbral/dashboard/games/a-dark-room'">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKjcWEyitfEg11IQOVS2ib_pQ_b-QzYnJfw&s" alt="a-dark-room">
+        A Dark Room
+      </div>
 <div class="card" data-name="Abandoned" onclick="location.href='/umbral/dashboard/games/abandoned'">
   <img src="https://via.placeholder.com/150" alt="abandoned">
   Abandoned
