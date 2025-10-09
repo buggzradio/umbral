@@ -112,7 +112,13 @@
     <div id="error" class="error">Incorrect username or password</div>
   </div>
 
-  <script>
+    <script>
+  // Check login state and redirect if already logged in
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+  if (isLoggedIn) {
+    window.location.href = "/umbral/dashboard";
+  }
+
     const users = {
       "user1": "pass1",
       "user2": "pass2",
