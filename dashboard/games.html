@@ -457,7 +457,6 @@
     <img src="https://www.iqutest.com/wp-content/uploads/2024/08/Worlds-Hardest-Game-2.jpg" alt="world's-hardest-game-2">
     World's Hardest Game 2
   </div>
-</div>
       <div class="card" data-name="2048" onclick="location.href='/umbral/dashboard/games/2048'">
         <img src="https://dashboard.snapcraft.io/site_media/appmedia/2021/06/icon_iGNi4SP.png" alt="2048">
         2048
@@ -751,26 +750,429 @@
     const gameGrid = document.getElementById('gameGrid');
 
     gridBtn.addEventListener('click', () => {
-      gameGrid.classList.remove('list-view');
-      gridBtn.classList.add('active');
-      listBtn.classList.remove('active');
-    });
-
-    listBtn.addEventListener('click', () => {
-      gameGrid.classList.add('list-view');
-      listBtn.classList.add('active');
-      gridBtn.classList.remove('active');
-    });
-
-    // Search filter
-    const searchBar = document.getElementById('searchBar');
-    searchBar.addEventListener('input', () => {
-      const query = searchBar.value.toLowerCase();
-      document.querySelectorAll('#gameGrid .card').forEach(card => {
-        const name = card.dataset.name.toLowerCase();
-        card.style.display = name.includes(query) ? 'flex' : 'none';
-      });
-    });
-  </script>
-</body>
-</html>
+      <div id="gameGrid">
+    <div class="card" data-name="10 Minutes Till&#39; Dawn" onclick="location.href='/jarbeefis/james/10-minutes-till-dawn'">
+      <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/10-Minutes-Till-Dawn-Header.jpg" alt="10-minutes-till'-dawn">
+      10 Minutes Till' Dawn
+    </div>
+    <div class="card" data-name="1v1 LOL xd" onclick="location.href='/jarbeefis/james/1v1lol'">
+      <img src="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_lol.onevone.jpg" alt="1v1-lol-xd">
+      1v1 LOL xd
+    </div>
+    <div class="card" data-name="2048" onclick="location.href='/umbral/dashboard/games/2048'">
+      <img src="https://dashboard.snapcraft.io/site_media/appmedia/2021/06/icon_iGNi4SP.png" alt="2048">
+      2048
+    </div>
+    <div class="card" data-name="3D City" onclick="location.href='https://buggzradio.github.io/acoustic/'">
+      <img src="https://media.sketchfab.com/models/84305fc12d3a42f1aa7a14d5643207d5/thumbnails/a388d60bbfbb4444afeb3e675683a3e8/bc6c8098736d4dcbbbd44ccd95b016c4.jpeg" alt="3d-city">
+      3D City
+    </div>
+    <div class="card" data-name="A Dark Room" onclick="location.href='/umbral/dashboard/games/a-dark-room'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKjcWEyitfEg11IQOVS2ib_pQ_b-QzYnJfw&s" alt="a-dark-room">
+      A Dark Room
+    </div>
+    <div class="card" data-name="A small world cup" onclick="location.href='/umbral/dashboard/games/a-small-world-cup'">
+      <img src="https://play-lh.googleusercontent.com/R47kNu-wEYMVnoo7rFOXiAHoBvW26KHps65Oi0S6zMF722x0LYqHJUiXRvB_xhsj0CM" alt="a-small-world-cup">
+      A small world cup
+    </div>
+    <div class="card" data-name="Abandoned" onclick="location.href='/umbral/dashboard/games/abandoned'">
+      <img src="https://preview.redd.it/so-what-happened-to-abandoned-v0-vd476pyxfeud1.jpeg?auto=webp&s=5050cb4af167351844bcec745961b2f9d9ec79b4" alt="abandoned">
+      Abandoned
+    </div>
+    <div class="card" data-name="Another Gentlemans Adventure" onclick="location.href='/umbral/dashboard/games/another-gentlemans-adventure'">
+      <img src="https://kbhgames.com/wp-content/uploads/2018/05/Another-Gentlemans-Adventure.jpg" alt="another-gentlemans-adventure">
+      Another Gentlemans Adventure
+    </div>
+    <div class="card" data-name="Awesome Tanks" onclick="location.href='/jarbeefis/james/awesometanks'">
+      <img src="https://www.coolmathgames.com/sites/default/files/AwesomeTanks_OG-logo.jpg" alt="awesome-tanks">
+      Awesome Tanks
+    </div>
+    <div class="card" data-name="Basket Random" onclick="location.href='/umbral/dashboard/games/basket-random'">
+      <img src="https://play-lh.googleusercontent.com/gP8T5Z1O-ngxIloiwcBZzrzyLPYDp0R_1BDNKUDZboIRPVImeyWI8-7aExvB9gAGNKc" alt="basket-random">
+      Basket Random
+    </div>
+    <div class="card" data-name="Basketball Stars" onclick="location.href='/umbral/dashboard/games/basketball-stars'">
+      <img src="https://img.gamedistribution.com/69d78d071f704fa183d75b4114ae40ec-512x512.jpg" alt="basketball-stars">
+      Basketball Stars
+    </div>
+    <div class="card" data-name="Bitlife" onclick="location.href='/umbral/dashboard/games/bitlife'">
+      <img src="https://play-lh.googleusercontent.com/fUM-UyywXxjC8soxAZdIlxJrlRRXmql8wkE426SHzft4lJycSKVd2jCYQQX1BEG9Xw" alt="bitlife">
+      Bitlife
+    </div>
+    <div class="card" data-name="BitLife (not blocked anymore)" onclick="location.href='/jarbeefis/james/bitlife'">
+      <img src="https://d.newsweek.com/en/full/1317374/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg?w=1600&h=1600&q=88&f=75befc746fb83a0c568c44ca07bc5e64" alt="bitlife-(not-blocked-anymore)">
+      BitLife (not blocked anymore)
+    </div>
+    <div class="card" data-name="BlackJack" onclick="location.href='/jarbeefis/james/blackjack/'">
+      <img src="https://crescent.edu/uploads/editor/images/Blackjack.png" alt="blackjack">
+      BlackJack
+    </div>
+    <div class="card" data-name="Blackjack" onclick="location.href='/umbral/dashboard/games/blackjack'">
+      <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000036775/227c60db41b42fd195b216e723aa40028600aabeb8325dfe0ac06643d7c694eb" alt="blackjack">
+      Blackjack
+    </div>
+    <div class="card" data-name="Block Blast" onclick="location.href='/jarbeefis/james/blockblast/'">
+      <img src="https://store-images.s-microsoft.com/image/apps.12438.14053817393525556.f5c7b5b6-8420-4484-b895-4b730c33c5d0.c7b90361-2458-4983-89bd-23377be924e4?mode=scale&q=90&h=225&w=150" alt="block-blast">
+      Block Blast
+    </div>
+    <div class="card" data-name="Blockblast" onclick="location.href='/umbral/dashboard/games/blockblast'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xgfWjZFsUOUGFDNctjl8H4rVYpQmwK-KEg&s" alt="blockblast">
+      Blockblast
+    </div>
+    <div class="card" data-name="Brawl Stars Project Laser" onclick="location.href='/umbral/dashboard/games/brawl-stars-project-laser'">
+      <img src="https://i.ytimg.com/vi/NnpWR-tEBjg/maxresdefault.jpg" alt="brawl-stars-project-laser">
+      Brawl Stars Project Laser
+    </div>
+    <div class="card" data-name="Brawl Stars: Project Laser" onclick="location.href='/jarbeefis/james/brawl-stars-project-laser'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX2tfySelV6KYoMV3hN48Cqr5UkE_LWRNSQ&s" alt="brawl-stars:-project-laser">
+      Brawl Stars: Project Laser
+    </div>
+    <div class="card" data-name="Candy Jam" onclick="location.href='/jarbeefis/james/candyjam'">
+      <img src="/path/to/candyjam.jpg" alt="candy-jam">
+      Candy Jam
+    </div>
+    <div class="card" data-name="Candyjam" onclick="location.href='/umbral/dashboard/games/candyjam'">
+      <img src="https://play-lh.googleusercontent.com/93lIWNMxniUQjvs82BymAeKVuUCKgtCq-vOIt7V71W75eOVRhvfTIWqSkh-xB1dlbKjt" alt="candyjam">
+      Candyjam
+    </div>
+    <div class="card" data-name="Chrome Dino" onclick="location.href='/umbral/dashboard/games/chrome-dino'">
+      <img src="https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg" alt="chrome-dino">
+      Chrome Dino
+    </div>
+    <div class="card" data-name="Chrome Dino Game Thing" onclick="location.href='/jarbeefis/james/chrome-dino/'">
+      <img src="https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg" alt="chrome-dino-game-thing">
+      Chrome Dino Game Thing
+    </div>
+    <div class="card" data-name="Coding Town" onclick="location.href='/jarbeefis/james/codingtown'">
+      <img src="https://www.scriptacademy.net/static/img/game_home.png" alt="coding-town">
+      Coding Town
+    </div>
+    <div class="card" data-name="Codingtown" onclick="location.href='/umbral/dashboard/games/codingtown'">
+      <img src="https://neilcodingschool.wordpress.com/wp-content/uploads/2021/04/image-4.png" alt="codingtown">
+      Codingtown
+    </div>
+    <div class="card" data-name="College RB" onclick="location.href='/umbral/dashboard/games/college-rb'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/d98547374c4129bf441b754d495e41aa/retro-bowl-college.png" alt="college-rb">
+      College RB
+    </div>
+    <div class="card" data-name="College Retro Bowl" onclick="location.href='/jarbeefis/james/college-rb'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d98547374c4129bf441b754d495e41aa.png" alt="college-retro-bowl">
+      College Retro Bowl
+    </div>
+    <div class="card" data-name="Cookie Clicker" onclick="location.href='/umbral/dashboard/games/cookie-clicker'">
+      <img src="https://super142.wordpress.com/wp-content/uploads/2022/07/cookie-clicker.jpg" alt="cookie-clicker">
+      Cookie Clicker
+    </div>
+    <div class="card" data-name="Cookie Clicker 2.052" onclick="location.href='/jarbeefis/james/cookie-clicker'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWv0INlOqaCpFF8ChucxuXwep569rIER5sA&s" alt="cookie-clicker-2.052">
+      Cookie Clicker 2.052
+    </div>
+    <div class="card" data-name="Cookieclick" onclick="location.href='/umbral/dashboard/games/cookieclick'">
+      <img src="https://play-lh.googleusercontent.com/qiTKdSxk5XUk6MGJj1r-dMwXwd5Mx-rR3xQNB339OdxwXzFeqMXceMjpkK3316fMAw" alt="cookieclick">
+      Cookieclick
+    </div>
+    <div class="card" data-name="Crappy City Guesser" onclick="location.href='/jarbeefis/james/crappycityguess'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_o-ZtpGCuCj-Ft-MOPNbzTm989SIh0Elx5Q&s" alt="crappy-city-guesser">
+      Crappy City Guesser
+    </div>
+    <div class="card" data-name="Crappycityguess" onclick="location.href='/umbral/dashboard/games/crappycityguess'">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="crappycityguess">
+      Crappycityguess
+    </div>
+    <div class="card" data-name="Crossy Road" onclick="location.href='/jarbeefis/james/crossyroad'">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjZlZTI1NzktMmU1MS00Njk3LWE3NzEtY2IwNmE3NmJlMDJjXkEyXkFqcGc@._V1_.jpg" alt="crossy-road">
+      Crossy Road
+    </div>
+    <div class="card" data-name="Crossyroad" onclick="location.href='/umbral/dashboard/games/crossyroad'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=204,height=204,fit=cover,f=auto/76fc1b000203faf71b77a75b10022142/crossy-road.png" alt="crossyroad">
+      Crossyroad
+    </div>
+    <div class="card" data-name="Diablo" onclick="location.href='/umbral/dashboard/games/diablo'">
+      <img src="https://play-lh.googleusercontent.com/9DvmwGV53li3CTxN8S1Koz-tNd_zepJJqWmkAGQrfRvEuTXn_s-5b5usnWGWqe2JuAQ9AvZzIrisTvYvL0bpo4k" alt="diablo">
+      Diablo
+    </div>
+    <div class="card" data-name="Dino 3D" onclick="location.href='/umbral/dashboard/games/dino3d'">
+      <img src="https://play-lh.googleusercontent.com/CjXH8tJfBbumPHdLsCCnICu69LE3z0mBvB-Ndilu1EQ6ib_oUDKBgkEEX0un-K_bjQ" alt="dino3d">
+      Dino 3D
+    </div>
+    <div class="card" data-name="Dino Run 3D" onclick="location.href='/jarbeefis/james/dino3d'">
+      <img src="https://elgoog.im/assets/p/dinosaur-game/3d/media/dinosaur-game-t-rex-run-3d.jpg" alt="dino-run-3d">
+      Dino Run 3D
+    </div>
+    <div class="card" data-name="Drift Hunters" onclick="location.href='/umbral/dashboard/games/drifthunters'">
+      <img src="https://drift-hunters.io/data/image/drift-hunters.png" alt="drifthunters">
+      Drift Hunters
+    </div>
+    <div class="card" data-name="DriftBoss" onclick="location.href='/jarbeefis/james/driftboss'">
+      <img src="https://images.crazygames.com/games/drift-boss/cover-1626884625264.png?auto=format,compress&q=75&cs=strip" alt="driftboss">
+      DriftBoss
+    </div>
+    <div class="card" data-name="Driftboss" onclick="location.href='/umbral/dashboard/games/driftboss'">
+      <img src="https://www.culinaryschools.org/kids-games/drift-boss/drift-boss.png" alt="driftboss">
+      Driftboss
+    </div>
+    <div class="card" data-name="Eagle Craft X" onclick="location.href='/jarbeefis/games/eaglercraftx'">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="eagle-craft-x">
+      Eagle Craft X
+    </div>
+    <div class="card" data-name="Eagle Craft(Stable)" onclick="location.href='/jarbeefis/james/eaglercraft'">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="eagle-craft(stable)">
+      Eagle Craft(Stable)
+    </div>
+    <div class="card" data-name="Eaglercraft" onclick="location.href='/umbral/dashboard/games/eaglercraft'">
+      <img src="https://minecraftforfreex.com/images/eaglercraft.png" alt="eaglercraft">
+      Eaglercraft
+    </div>
+    <div class="card" data-name="Eaglercraft X" onclick="location.href='/umbral/dashboard/games/eaglercraftx'">
+      <img src="https://minecraftforfreex.com/images/eaglercraft.png" alt="eaglercraftx">
+      Eaglercraft X
+    </div>
+    <div class="card" data-name="Eggy Car" onclick="location.href='/jarbeefis/james/eggycar'">
+      <img src="https://cdna.artstation.com/p/assets/images/images/068/606/542/large/dakota-hines-eggy-car.jpg?1698230263" alt="eggy-car">
+      Eggy Car
+    </div>
+    <div class="card" data-name="Eggycar" onclick="location.href='/umbral/dashboard/games/eggycar'">
+      <img src="https://eggycar2.io/data/image/eggy-car-game.jpg" alt="eggycar">
+      Eggycar
+    </div>
+    <div class="card" data-name="Elemental" onclick="location.href='/umbral/dashboard/games/elemental'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="elemental">
+      Elemental
+    </div>
+    <div class="card" data-name="Elemental One" onclick="location.href='/jarbeefis/james/elemental'">
+      <img src="https://mindstec.com/wp-content/uploads/2020/07/ElementOneLogo_250x250.png" alt="elemental-one">
+      Elemental One
+    </div>
+    <div class="card" data-name="Fireboy and Watergirl" onclick="location.href='/umbral/dashboard/games/fireboy-and-watergirl'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="fireboy-and-watergirl">
+      Fireboy and Watergirl
+    </div>
+    <div class="card" data-name="Fireboy and Watergirl 2" onclick="location.href='/umbral/dashboard/games/fireboy-and-watergirl-2'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="fireboy-and-watergirl-2">
+      Fireboy and Watergirl 2
+    </div>
+    <div class="card" data-name="Fireboy and Watergirl 3" onclick="location.href='/umbral/dashboard/games/fireboy-and-watergirl-3'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="fireboy-and-watergirl-3">
+      Fireboy and Watergirl 3
+    </div>
+    <div class="card" data-name="Fireboy and Watergirl 4" onclick="location.href='/umbral/dashboard/games/fireboy-and-watergirl-4'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="fireboy-and-watergirl-4">
+      Fireboy and Watergirl 4
+    </div>
+    <div class="card" data-name="Firewater" onclick="location.href='/umbral/dashboard/games/firewater'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="firewater">
+      Firewater
+    </div>
+    <div class="card" data-name="Flight Sim" onclick="location.href='/jarbeefis/james/flightfs'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSPaqJbOMWdH080UdXhtH-9gYq8zRycq4W8g&s" alt="flight-sim">
+      Flight Sim
+    </div>
+    <div class="card" data-name="Flightfs" onclick="location.href='/umbral/dashboard/games/flightfs'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="flightfs">
+      Flightfs
+    </div>
+    <div class="card" data-name="G Switch" onclick="location.href='/jarbeefis/james/g-switch'">
+      <img src="https://play-lh.googleusercontent.com/ylSOEyk2tG390Pm4-IRUlMVtjNuYnxgX1aTm6ZxC_I6hCHjanvHFgZkCCw73sGE3lg" alt="g-switch">
+      G Switch
+    </div>
+    <div class="card" data-name="Geometry Dash Lite" onclick="location.href='/umbral/dashboard/games/geometry-dash-lite'">
+      <img src="https://m.media-amazon.com/images/I/61+EFvroCVL.png" alt="geometry-dash-lite">
+      Geometry Dash Lite
+    </div>
+    <div class="card" data-name="Getaway Shootout" onclick="location.href='/umbral/dashboard/games/getaway-shootout'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="getaway-shootout">
+      Getaway Shootout
+    </div>
+    <div class="card" data-name="GTA" onclick="location.href='/umbral/dashboard/games/gta'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="gta">
+      GTA
+    </div>
+    <div class="card" data-name="GTA Knockoff" onclick="location.href='/jarbeefis/james/gta'">
+      <img src="https://img.gamedistribution.com/1e4fd1ecada740c29e31fafc39aa8adc-512x512.jpeg" alt="gta-knockoff">
+      GTA Knockoff
+    </div>
+    <div class="card" data-name="Hex GL" onclick="location.href='/umbral/dashboard/games/hex-gl'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="hex-gl">
+      Hex GL
+    </div>
+    <div class="card" data-name="HexGL" onclick="location.href='/jarbeefis/james/hex-gl'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZma7r84hfKzcS8Y3ZW_5-ii8l5c33BUXS3Q&s" alt="hexgl">
+      HexGL
+    </div>
+    <div class="card" data-name="Interstellar (Ask me to start)" onclick="location.href='https://orange-robot-5g4jq9rg9g94cp799-8080.app.github.dev/'">
+      <img src="https://discord.do/wp-content/uploads/2024/04/Interstellar.jpg" alt="interstellar-(ask-me-to-start)">
+      Interstellar (Ask me to start)
+    </div>
+    <div class="card" data-name="Monkey Mart" onclick="location.href='/umbral/dashboard/games/monkey-mart'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="monkey-mart">
+      Monkey Mart
+    </div>
+    <div class="card" data-name="Moto X3M" onclick="location.href='/umbral/dashboard/games/motox3m'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="motox3m">
+      Moto X3M
+    </div>
+    <div class="card" data-name="Moto X3M Normal" onclick="location.href='/umbral/dashboard/games/motox3mnormal'"> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="motox3mnormal">
+      Moto X3M Normal
+    </div>
+    <div class="card" data-name="Moto X3M Winter" onclick="location.href='/jarbeefis/james/motox3m'">
+      <img src="https://www.coolmathgames.com/sites/default/files/MotoX3M-Winter_OG-logo.jpg" alt="moto-x3m-winter">
+      Moto X3M Winter
+    </div>
+    <div class="card" data-name="Particle Clicker" onclick="location.href='/umbral/dashboard/games/particle-clicker'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="particle-clicker">
+      Particle Clicker
+    </div>
+    <div class="card" data-name="Progress" onclick="location.href='/umbral/dashboard/games/progress'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="progress">
+      Progress
+    </div>
+    <div class="card" data-name="Progress Knight" onclick="location.href='/jarbeefis/james/progress/'">
+      <img src="https://play-lh.googleusercontent.com/IdW12d5UllWdq67LVDPvUZY82XGL0WRcOcQnwi_HfvnpD3Dn_LBXWH-whAfJiaOymw" alt="progress-knight">
+      Progress Knight
+    </div>
+    <div class="card" data-name="Rainbow" onclick="location.href='/umbral/dashboard/games/rainbow'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="rainbow">
+      Rainbow
+    </div>
+    <div class="card" data-name="Rainbow Stacker (Meme)" onclick="location.href='/jarbeefis/james/rainbow'">
+      <img src="https://parade.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3NTcwOTU3MTY5MTQxNDQy/olivia-dunne-net-worth.jpg" alt="rainbow-stacker-(meme)">
+      Rainbow Stacker (Meme)
+    </div>
+    <div class="card" data-name="Reactor" onclick="location.href='/umbral/dashboard/games/reactor'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrQZqgX01gI_vDjBjvVEJNkGpOrq7aTvvo3A&s" alt="reactor">
+      Reactor
+    </div>
+    <div class="card" data-name="Retro Bowl" onclick="location.href='/umbral/dashboard/games/retro-bowl'">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/bf/Retro_Bowl_cover.png" alt="retro-bowl">
+      Retro Bowl
+    </div>
+    <div class="card" data-name="Run 3" onclick="location.href='/umbral/dashboard/games/run3'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/d3c19e9b-9b7b-4a54-9cb5-6188a5bd7d3b.png" alt="run-3">
+      Run 3
+    </div>
+    <div class="card" data-name="Russian Roulette" onclick="location.href='/umbral/dashboard/games/russian-roulette'">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Russian_Roulette_%28Alchemist_album%29.jpg/220px-Russian_Roulette_%28Alchemist_album%29.jpg" alt="russian-roulette">
+      Russian Roulette
+    </div>
+    <div class="card" data-name="Ski" onclick="location.href='/umbral/dashboard/games/ski'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgsFnlCiPf8APa07RUuzB0c1iAAy8yDVKAw&s" alt="ski">
+      Ski
+    </div>
+    <div class="card" data-name="Ski 3D X3M" onclick="location.href='/jarbeefis/james/ski'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgsFnlCiPf8APa07RUuzB0c1iAAy8yDVKAw&s" alt="ski-3d-x3m">
+      Ski 3D X3M
+    </div>
+    <div class="card" data-name="Slither IO Knockoff" onclick="location.href='/jarbeefis/james/slitherio'">
+      <img src="https://static.wikia.nocookie.net/smosh/images/1/1b/Slither.io.png/revision/latest?cb=20190725104840" alt="slither-io-knockoff">
+      Slither IO Knockoff
+    </div>
+    <div class="card" data-name="Slither.io" onclick="location.href='/umbral/dashboard/games/slitherio'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="slitherio">
+      Slither.io
+    </div>
+    <div class="card" data-name="Slope" onclick="location.href='/umbral/dashboard/games/slope'">
+      <img src="https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs" alt="slope">
+      Slope
+    </div>
+    <div class="card" data-name="Smash Karts" onclick="location.href='/jarbeefis/james/smashkarts'">
+      <img src="https://yt3.googleusercontent.com/f4e3X0TDQ6edrwk29w6pBgxLdTnNUvZdBkDGDO0zqlWXY6NGVjdDvlTKhyg4apwjykBu-hSGuw=s900-c-k-c0x00ffffff-no-rj" alt="smash-karts">
+      Smash Karts
+    </div>
+    <div class="card" data-name="Smashkarts" onclick="location.href='/umbral/dashboard/games/smashkarts'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="smashkarts">
+      Smashkarts
+    </div>
+    <div class="card" data-name="Snorider" onclick="location.href='/umbral/dashboard/games/snorider'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="snorider">
+      Snorider
+    </div>
+    <div class="card" data-name="Snow Rider 3D" onclick="location.href='/jarbeefis/james/snorider/'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJy4pM2G_0ViLxs6g-mq68YS7RRUv_XUHg4w&s" alt="snow-rider-3d">
+      Snow Rider 3D
+    </div>
+    <div class="card" data-name="Stunt Biker" onclick="location.href='/umbral/dashboard/games/stunt-biker'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="stunt-biker">
+      Stunt Biker
+    </div>
+    <div class="card" data-name="Stunt Biker 3D" onclick="location.href='/jarbeefis/james/stunt-biker'">
+      <img src="https://play-lh.googleusercontent.com/1lHJ1_FdG4ME_1bL6XSM6zmSvcy2g1TA4bjvMmnZz7kdzHSaTV501vqW-RCnVCXOq-uG=w526-h296-rw" alt="stunt-biker-3d">
+      Stunt Biker 3D
+    </div>
+    <div class="card" data-name="Subway Surfers" onclick="location.href='/umbral/dashboard/games/subwaysurfers'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="subwaysurfers">
+      Subway Surfers
+    </div>
+    <div class="card" data-name="Subway Surfers 2.01" onclick="location.href='/jarbeefis/james/subwaysurfers/'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/3660e32ebe83bc65e05a81b335f74823.png" alt="subway-surfers-2.01">
+      Subway Surfers 2.01
+    </div>
+    <div class="card" data-name="Subway Surfers New York" onclick="location.href='/jarbeefis/james/subway-surfers-ny'">
+      <img src="https://img.nutwg.com/uploads/sites/2/2023/09/2023-08-31-170659831.webp" alt="subway-surfers-new-york">
+      Subway Surfers New York
+    </div>
+    <div class="card" data-name="Subway Surfers NY" onclick="location.href='/umbral/dashboard/games/subway-surfers-ny'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="subway-surfers-ny">
+      Subway Surfers NY
+    </div>
+    <div class="card" data-name="Temple Run 2" onclick="location.href='/umbral/dashboard/games/temple-run-2'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/f4b3ac7fe25cad9bc028b33f7a407f28.png" alt="temple-run-2">
+      Temple Run 2
+    </div>
+    <div class="card" data-name="There is No Game" onclick="location.href='/umbral/dashboard/games/there-is-no-game'">
+      <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/1241700/header.jpg?t=1666983908" alt="there-is-no-game">
+      There is No Game
+    </div>
+    <div class="card" data-name="Time Shooter" onclick="location.href='/umbral/dashboard/games/time-shooter'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="time-shooter">
+      Time Shooter
+    </div>
+    <div class="card" data-name="Time Shooter 3" onclick="location.href='/umbral/dashboard/games/time-shooter-3'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="time-shooter-3">
+      Time Shooter 3
+    </div>
+    <div class="card" data-name="Tiny Fishing" onclick="location.href='/umbral/dashboard/games/tinyfishing'">
+      <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/c8cb366d52fc2a67fb313c344efdbc9e.png" alt="tiny-fishing">
+      Tiny Fishing
+    </div>
+    <div class="card" data-name="Tower Defense" onclick="location.href='/umbral/dashboard/games/tower-defense'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZl4GJcXXKOGzCyKNh7EOtyd8JiySMofw1Pw&s" alt="tower-defense">
+      Tower Defense
+    </div>
+    <div class="card" data-name="Traffic Jam 3D" onclick="location.href='/umbral/dashboard/games/trafficjam3d'">
+      <img src="https://trafficjam3d.github.io/traffic-jam-3d/logo.png" alt="traffic-jam-3d">
+      Traffic Jam 3D
+    </div>
+    <div class="card" data-name="Tunnel Rush" onclick="location.href='/umbral/dashboard/games/tunnel-rush'">
+      <img src="https://tunnelrushgame.io/data/image/tunnel-rush.png" alt="tunnel-rush">
+      Tunnel Rush
+    </div>
+    <div class="card" data-name="Uphill Bus Sim" onclick="location.href='/umbral/dashboard/games/uphillbussim'">
+      <img src="https://img.gamedistribution.com/7af48c5ae6044b5087a82621f712b052-512x512.jpeg" alt="uphillbussim">
+      Uphill Bus Sim
+    </div>
+    <div class="card" data-name="Uphill Bus Simulator 3D" onclick="location.href='/jarbeefis/james/uphillbussim'">
+      <img src="https://img.gamedistribution.com/7af48c5ae6044b5087a82621f712b052-512x512.jpeg" alt="uphill-bus-simulator-3d">
+      Uphill Bus Simulator 3D
+    </div>
+    <div class="card" data-name="Vex 6" onclick="location.href='/umbral/dashboard/games/vex6'">
+      <img src="https://red-ball4.com/data/image/vex-6-game.png" alt="vex-6">
+      Vex 6
+    </div>
+    <div class="card" data-name="Wordle" onclick="location.href='/umbral/dashboard/games/wordle'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="wordle">
+      Wordle
+    </div>
+    <div class="card" data-name="Wordle Unlimited" onclick="location.href='/jarbeefis/james/wordle/'">
+      <img src="https://cdn.mos.cms.futurecdn.net/zahomcjNCUokHHj4KDKz8E.png" alt="wordle-unlimited">
+      Wordle Unlimited
+    </div>
+    <div class="card" data-name="World's Hardest Game 2" onclick="location.href='/jarbeefis/james/worldshardest2'">
+      <img src="https://www.iqutest.com/wp-content/uploads/2024/08/Worlds-Hardest-Game-2.jpg" alt="world's-hardest-game-2">
+      World's Hardest Game 2
+    </div>
+    <div class="card" data-name="Worlds Hardest 2" onclick="location.href='/umbral/dashboard/games/worldshardest2'">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLPyDEg3ZUC21gRoVs5m3poGC4pdPqhqmDg&s" alt="worldshardest2">
+      Worlds Hardest 2
+    </div>
+  </div>
